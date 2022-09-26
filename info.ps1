@@ -15,7 +15,6 @@ $SMTPClient = New-Object Net.Mail.SmtpClient($SmtpServer, 587)
 $SMTPClient.EnableSsl = $true 
 $SMTPClient.Credentials = New-Object System.Net.NetworkCredential("myansen039@outlook.com", "Root@roxx1"); 
 $SMTPClient.Send($smtpMessage)
-Start-Sleep -Seconds 120
 
 
 
