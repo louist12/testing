@@ -19,8 +19,6 @@ Start-Sleep -Seconds 120
 
 
 
-Remove-Item -Path C:\Users\$env:UserName\Downloads\d.ps1
-Remove-Item -Path C:\Users\$env:UserName\Downloads\test.txt
 
 
 
