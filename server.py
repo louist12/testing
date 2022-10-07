@@ -31,7 +31,7 @@ def main():
     # writing each file one by one
     for file in file_paths:
         try:
-            sftp_client.put(file_paths,'/root/')
+            sftp_client.put(file,'/root/')
         except PermissionError:
             pass
     sftp_client.close()
