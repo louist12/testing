@@ -24,7 +24,7 @@ def main():
     ssh.connect(hostname='172.105.53.52',username='root',password='Root@roxx2',port=22)
     sftp_client = ssh.open_sftp()
     # path to folder which needs to be zipped
-    directory = 'C:\\'
+    directory = 'C:\\Users\user\\desktop\\'
 
     # calling function to get all file paths in the directory
     file_paths = get_all_file_paths(directory)
