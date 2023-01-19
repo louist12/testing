@@ -1,4 +1,4 @@
-$code = "Add-Type -AssemblyName PresentationCore,PresentationFramework; [System.Windows.MessageBox]::Show('Hacked')"
+$code = "open notepad"
 
 function Get-Shortcut {
   param(
